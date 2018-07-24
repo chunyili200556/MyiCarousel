@@ -12,6 +12,9 @@
 		27386A4620F081ED00F2E947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27386A4420F081ED00F2E947 /* Main.storyboard */; };
 		27386A4820F081EF00F2E947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27386A4720F081EF00F2E947 /* Assets.xcassets */; };
 		27386A4B20F081EF00F2E947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27386A4920F081EF00F2E947 /* LaunchScreen.storyboard */; };
+		27386A5320F0869300F2E947 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27386A5220F0869300F2E947 /* CustomUIView.swift */; };
+		27386A5520F096A200F2E947 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27386A5420F096A200F2E947 /* CustomView.xib */; };
+		EC59AE61AAF53806D11FB5C6 /* Pods_MyiCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6F2FF403ED88D9746D219 /* Pods_MyiCarousel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		27386A4720F081EF00F2E947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27386A4A20F081EF00F2E947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27386A4C20F081EF00F2E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27386A5220F0869300F2E947 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		27386A5420F096A200F2E947 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		ADA6F2FF403ED88D9746D219 /* Pods_MyiCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyiCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4E9C1A1D05AF790F5B99F1 /* Pods-MyiCarousel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyiCarousel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyiCarousel/Pods-MyiCarousel.debug.xcconfig"; sourceTree = "<group>"; };
+		FFFBA38F1C82F3B2B0F1BC4E /* Pods-MyiCarousel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyiCarousel.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyiCarousel/Pods-MyiCarousel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC59AE61AAF53806D11FB5C6 /* Pods_MyiCarousel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06F72EEECA461081419DAEED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6F2FF403ED88D9746D219 /* Pods_MyiCarousel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		27386A3420F081ED00F2E947 = {
 			isa = PBXGroup;
 			children = (
 				27386A3F20F081ED00F2E947 /* MyiCarousel */,
 				27386A3E20F081ED00F2E947 /* Products */,
+				54677CB9082AD2DC4AAF8DDE /* Pods */,
+				06F72EEECA461081419DAEED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +76,22 @@
 				27386A4020F081ED00F2E947 /* AppDelegate.swift */,
 				27386A4220F081ED00F2E947 /* ViewController.swift */,
 				27386A4420F081ED00F2E947 /* Main.storyboard */,
+				27386A5220F0869300F2E947 /* CustomUIView.swift */,
+				27386A5420F096A200F2E947 /* CustomView.xib */,
 				27386A4720F081EF00F2E947 /* Assets.xcassets */,
 				27386A4920F081EF00F2E947 /* LaunchScreen.storyboard */,
 				27386A4C20F081EF00F2E947 /* Info.plist */,
 			);
 			path = MyiCarousel;
+			sourceTree = "<group>";
+		};
+		54677CB9082AD2DC4AAF8DDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA4E9C1A1D05AF790F5B99F1 /* Pods-MyiCarousel.debug.xcconfig */,
+				FFFBA38F1C82F3B2B0F1BC4E /* Pods-MyiCarousel.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27386A4F20F081EF00F2E947 /* Build configuration list for PBXNativeTarget "MyiCarousel" */;
 			buildPhases = (
+				EC26A704CB42DF06433A69ED /* [CP] Check Pods Manifest.lock */,
 				27386A3920F081ED00F2E947 /* Sources */,
 				27386A3A20F081ED00F2E947 /* Frameworks */,
 				27386A3B20F081ED00F2E947 /* Resources */,
+				A66CE59F00910022E25FE53D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27386A4B20F081EF00F2E947 /* LaunchScreen.storyboard in Resources */,
+				27386A5520F096A200F2E947 /* CustomView.xib in Resources */,
 				27386A4820F081EF00F2E947 /* Assets.xcassets in Resources */,
 				27386A4620F081ED00F2E947 /* Main.storyboard in Resources */,
 			);
@@ -130,12 +163,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A66CE59F00910022E25FE53D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyiCarousel/Pods-MyiCarousel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyiCarousel/Pods-MyiCarousel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC26A704CB42DF06433A69ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyiCarousel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27386A3920F081ED00F2E947 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				27386A4320F081ED00F2E947 /* ViewController.swift in Sources */,
+				27386A5320F0869300F2E947 /* CustomUIView.swift in Sources */,
 				27386A4120F081ED00F2E947 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,11 +351,13 @@
 		};
 		27386A5020F081EF00F2E947 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA4E9C1A1D05AF790F5B99F1 /* Pods-MyiCarousel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK8ATU8493;
 				INFOPLIST_FILE = MyiCarousel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +371,13 @@
 		};
 		27386A5120F081EF00F2E947 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFBA38F1C82F3B2B0F1BC4E /* Pods-MyiCarousel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK8ATU8493;
 				INFOPLIST_FILE = MyiCarousel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
